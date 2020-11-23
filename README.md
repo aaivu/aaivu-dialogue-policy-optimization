@@ -1,4 +1,4 @@
-# Project Title / Research Title
+# Dialog policy optimization in low resource setting
 
 ![project] ![research]
 
@@ -20,7 +20,7 @@
 
 ## Summary
 
-two - three paragraphs about your project.
+The dialogue policy optimization is an open-research problem and currently, the state of the art methods have been based on Reinforcement Learning(RL). However, RL based methods tend to overfit in a low resource setting. We are introducing a novel probability-based method to address the overfitting problem. Since this methodology applies to a low amount of samples, this method can lead to an insufficient exploration of agendas by the agent. Therefore we further developed the methodology by introducing a selective sampling method based on the reward function that prioritizes the failed dialog acts, where the agent actively decides what agendas to use.
 
 ## Description
 
