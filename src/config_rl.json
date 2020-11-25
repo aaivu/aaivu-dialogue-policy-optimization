@@ -1,0 +1,43 @@
+{
+    "_comments": {
+        "selfplay_params": "is general parameters epsilon denoted to noise introduced set exploration to True for running Exploration at later stages, update step denotes when updates happening",
+        "exploration_params": "is exploration related params, thetas denote the increment factor and additive denotes whether it is linear or exponential increment"
+    },
+    "alpha": 0.5,
+    "beta": 1,
+    "Rl algorithms": {
+        "dqn": 10,
+        "duel": 11,
+        "double": 12,
+        "prioratized": 13,
+        "noisy-net": 14,
+        "n-step": 15,
+        "distrbutional": 16
+    },
+    "algorithm": "duel",
+    "selfplay_params": {
+        "epsilon_1": 0.001,
+        "epsilon_2": 0.0001,
+        "epsilon_3": 0.0001,
+        "updatable": "True",
+        "update_step": 4,
+        "exploration": "False",
+        "prioratize_failed": "True",
+        "update_start": 150
+    },
+    "exploration_params": {
+        "additive": "True",
+        "theta_1": 2,
+        "theta_2": 2,
+        "theta_3": 2
+    },
+    "reward_based_params": {
+        "alpha": [
+            0.1
+        ],
+        "beta": [
+            0.5
+        ],
+        "method": "naive"
+    }
+}
