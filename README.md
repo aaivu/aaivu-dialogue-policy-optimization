@@ -32,7 +32,7 @@ Project phases - **complete**
 
 Diagram below shows the overall achitecture of the system
 
-![Architecture Diagram](imgs/architecture_diagram.png)
+![Architecture Diagram](docs/images/architecture_diagram.png)
 
 ### Directory Structure
 The important files and directories of the repository is shown below
@@ -179,10 +179,10 @@ python run_RL_experiments.py
 For both experiments the dotted lines indicate training success rate while the solid line indicate the test success rate
 
 ### Experiment 01
-![Experiment 01](imgs/plot_01.png)
+![Experiment 01](docs/images/plot_01.png)
 
 ### Experiment 02
-![Experiment 02](imgs/plot_02.png)
+![Experiment 02](docs/images/plot_02.png)
 
 
 ## More references
