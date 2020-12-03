@@ -1,4 +1,4 @@
-# Dialog policy optimization in low resource setting
+# Dialogue policy optimization in low resource setting
 
 ![project] ![research]
 
@@ -20,17 +20,20 @@
 
 ## Summary
 
-The dialogue policy optimization in task oriented concversational agents in low resource setting is a open research project. We have develop a novel approach for dialogue policy optimization using Rienforcement Learning. The methodology is based on Self-play and a novel sampling technique that prioratizes failed dialogues over successful ones
+The dialogue policy optimization in task oriented conversational agents, employed in low resource setting, is an open research project. We have developed a novel approach for dialogue policy optimization using Reinforcement Learning. The methodology is based on Self-play and a novel sampling technique that prioritizes failed dialogues over successful ones.
 
 ## Description
 
-The dialogue policy optimization is an open-research problem and currently, the state of the art methods have been based on Reinforcement Learning(RL). However, RL based methods tend to overfit in a low resource setting due to sample deficiency. We are introducing a novel probability-based Self-play method to address this overfitting problem. Since this methodology applies to a low amount of samples, this method can lead to an insufficient exploration of agendas by the agent. Therefore we further developed the methodology by introducing a selective sampling method based on the reward function that prioritizes the failed dialog acts, where the agent actively decides what agendas to use.
+A conversational agent or a typical dialogue system is a software which interprets and responds to statements, made by users in real time, in free-form natural language, with the purpose of retrieving desired information relevant to the task to which the agent is oriented. The dialogue manager of such a system uses a dialogue policy to decide what the agent should say at each point in the dialogue. Designing an efficient dialogue policy, that could essentially be used in real world dialogue system applications, encompasses numerous challenges. Accuracy of user responses being highly variable, user responses being relatively unconstrained, the user alone being aware, frequently, of his/her goal are just a few challenges to start off with. 
+Thus, dialogue policy optimization is regarded as an open-research problem. Currently many state of the art methods, hinged on Reinforcement Learning (RL), are being deployed to address this problem. RL is an area of machine learning, where the agent is rewarded or punished by the user according to the state it returns for the given input. The agent continuously learns by taking suitable actions to maximize reward in a particular situation. When viewing dialogue management as a RL task, the reward function - which the agent tries to maximize - would be fulfilling the user's goal as efficiently as possible.
+However, RL based methods tend to overfit in a low resource setting due to sample deficiency. To tackle this issue, we introduce a novel probability based Self-play method. Self-play, the new weapon in modern RL, is where the agent collects observations and learns by playing against itself. This technique rules out the need to offer direct supervision since all the information that the agent employs to learn comes from its own clone, empowering it to maximize its own objectives.
+Nevertheless, this methodology could also lead to an insufficient exploration of agendas by the agent, since this method applies to a low number of samples. Therefore, we further refine the methodology by introducing a selective sampling method based on the reward function that prioritizes failed dialogue acts, where the agent actively decides on the agendas to be used. 
 
 Project phases - **complete**
 
 ### Architecture Diagram
 
-Diagram below shows the overall achitecture of the system
+Diagram below shows the overall architecture of the system.
 
 ![Architecture Diagram](docs/images/architecture_diagram.png)
 
@@ -57,9 +60,9 @@ The important files and directories of the repository is shown below
 
 ### Requirements 
 
-The system is implemented using Python version 2(Since the simualtor we used is implemented using Python 2)
+The system is implemented using Python version 2(Since the simulator we used is implemented using Python 2)
 
-The following requirements are required
+The following requirements are called for.
 ```commandline
 numpy
 pandas
@@ -151,11 +154,11 @@ python run.py --agt 9 --usr 1 --max_turn 40
 
 ### Experiment 01 : To compare our approach with a baseline
 
-The experiment 01 is run to measure the performance of Self-play approach against a baseline model. So We have run the experiment with and without Self-Play as well as with and without Reward based smpling.
+The experiment 01 is run to measure the performance of Self-play approach against a baseline model. Consequently, we have run the experiment with and without Self-Play, as well as with and without Reward based sampling.
 
-The experiment is run varying number of training samples. To setup a minimum and maximum number of samples edit user_goal_hendler.py
+The experiment is run, varying a number of training samples. To setup a minimum and maximum number of samples edit user_goal_hendler.py
 
-Also the configuration file for running experiment 01 is config.json
+Further, the configuration file for running experiment 01 is config.json
 
 To run the experiment 
 
@@ -164,9 +167,9 @@ python user_goal_handler.py
 ```
 ### Experiment 02 : To measure the rate of convergence
 
-The experiment 02 is conducted to measure the rate of convergence of the Self-play approach and to check whether there is apparent lag between training success rate and test success rate
+The experiment 02 is conducted to measure the rate of convergence of the Self-play approach and to check whether there is an apparent lag between training success rate and test success rate.
 
-The configuration file for running experiment 01 is config_rl.json
+The configuration file for running experiment 02 is config_rl.json
 
 ```commandline
 python run_RL_experiments.py
@@ -176,7 +179,7 @@ python run_RL_experiments.py
 
 ## Results
 
-For both experiments the dotted lines indicate training success rate while the solid line indicate the test success rate
+For both experiments, the dotted lines indicate training success rate while the solid lines indicate the test success rate.
 
 ### Experiment 01
 ![Experiment 01](docs/images/plot_01.png)
@@ -189,7 +192,7 @@ For both experiments the dotted lines indicate training success rate while the s
 
 We have used the user simulator described in [A User Simulator for Task-Completion Dialogues](http://arxiv.org/abs/1612.05688) as the simulator. Github link to the user simulator can be found on [here](https://github.com/MiuLab/TC-Bot).
 
-Main papers to be cited
+Main papers to be cited are as follows.
 
 ```
 @inproceedings{Tharindu2020Dialog,
