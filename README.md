@@ -6,7 +6,6 @@
 
 - <b>Project Lead(s) / Mentor(s)</b>
     1. Name (talk forum profile link)
-    2. Name (talk forum profile link)
 - <b>Contributor(s)</b>
     1. Name (talk forum profile link)
     2. Name (talk forum profile link)
