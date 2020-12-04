@@ -1,4 +1,4 @@
-# Dialog policy optimization in low resource setting
+# Dialogue policy optimization in low resource setting
 
 ![project] ![research]
 
