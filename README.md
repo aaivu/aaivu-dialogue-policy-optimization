@@ -11,7 +11,7 @@
     1. Name (talk forum profile link)
     2. Name (talk forum profile link)
 
-<b>Usefull Links </b>
+<b>Useful Links </b>
 
 - GitHub : <project_url>
 - Talk Forum : <talk_forum_link>
