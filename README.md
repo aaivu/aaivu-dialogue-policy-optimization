@@ -3,22 +3,6 @@
 ![project] ![research]
 
 
-
-- <b>Project Lead(s) / Mentor(s)</b>
-    1. Tharindu Madusanka
-    2. Durashi Langappuli
-    3. Thisara Welmilla
-- <b>Supervisor (s)</b>
-    1. Dr. Uthayasanker Thayasivam
-    2. Prof. Sanath Jayasena
-
-<b>Useful Links </b>
-
-- GitHub : <project_url>
-- Talk Forum : <talk_forum_link>
-
----
-
 ## Summary
 
 The dialogue policy optimization in task oriented conversational agents, employed in low resource setting, is an open research project. We have developed a novel approach for dialogue policy optimization using Reinforcement Learning. The methodology is based on Self-play and a novel sampling technique that prioritizes failed dialogues over successful ones.
